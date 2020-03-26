@@ -13,4 +13,6 @@ https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kot
   - https://qiita.com/hirotann618/items/393c45a581f1b6b6178f
 - when, if
   - https://qiita.com/AAkira/items/3d5b694d488fe029d7b9
-  -
+- 画面遷移
+  - https://www.usaco-pg.com/2017/05/01/kotlin-android-intent/
+  - https://akira-watson.com/android/activity-1.html
