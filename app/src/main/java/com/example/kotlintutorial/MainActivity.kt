@@ -1,25 +1,50 @@
 package com.example.kotlintutorial
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 // AppCompatActivity を継承した MainActivity
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        var num = 0
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        // XMLに定義しているコンポーネントを直で参照できる！すげー！
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        toast_button.setOnClickListener { view ->
+            Toast.makeText(applicationContext, "現在の値は、" + num_text.getText().toString() + "です", Toast.LENGTH_SHORT).show()
+        }
+
+        count_button.setOnClickListener { view ->
+            num = num_text.getText().toString().toInt()
+            num++
+            num_text.setText(num.toString())
+        }
+
+        random_button.setOnClickListener { view ->
+            num = (Math.random() * 1000).toInt()
+            num_text.setText(num.toString())
+        }
+
+        fab.setOnClickListener {view ->
+            Toast.makeText(applicationContext, "押してくださいましたね…", Toast.LENGTH_SHORT).show()
+
+            /**Java ver
+            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+            startActivity(intent);
+             */
+
+            val intent = Intent(this, Main2Activity::class.java)
+            startActivity(intent)
         }
     }
 
