@@ -1,13 +1,13 @@
-# KotlinTutorialApp
+# KotlinTutorialApp🦜
 Kotlinの学習用リポジトリ
 
-## 概要
+## 概要🙂
 以前から気になっていた言語でもあり、Kotlin関係のお仕事が増えてきているという実情も踏まえて学習を進めます。
 まずは公式のチュートリアルで学習を進める。
 
 https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/#0
 
-## 参考（忘れているのが多いので書き残しておく）
+## 参考（忘れているのが多いので書き残しておく）🤔
 - メニューバー、ツールバー
   - https://qiita.com/folivora/items/eaa1e6a92ac2b2ea4220
   - https://qiita.com/hirotann618/items/393c45a581f1b6b6178f
@@ -23,7 +23,7 @@ https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kot
 - Mathクラスの乱数メソッド
   - https://blog.java-reference.com/java-math-random/
 
-## メモ
+## メモ✍️
 ```
 // TextViewの文字列を取得してインクリメントする
 num = num_text.getText().toString().toInt()
